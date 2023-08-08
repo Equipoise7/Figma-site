@@ -7,7 +7,7 @@
 body {
     font-family: 'Mulish', sans-serif;
     list-style: none;   
-    width: 1600px;
+    max-width: 1600px;
     margin: 0 auto;
 
 }
@@ -21,6 +21,7 @@ body {
     justify-content: space-between;
     align-items: center;
     max-width: 1216px;
+    min-width: 760px;
 }
 
 .header-logo {
@@ -47,12 +48,17 @@ body {
     font-size: 24px;
 }
 
+.header-text {
+    display: flex;
+    justify-content: space-between;
+    min-width: 500px;
+}
+
 .header-text a {
     color: #1F1534;
     opacity: 50%;
     font-size: 18px;
     font-weight: 400;
-    margin-left: 40px;
 }
 
 .header-text a:hover {
@@ -216,7 +222,7 @@ body {
     margin: 221px auto 0;
     display: flex;
     flex-direction: row-reverse;
-    max-width: 1278px;
+    min-width: 1278px;
 }
 
 .main-section-text {
@@ -496,3 +502,92 @@ body {
     border: 1.4px solid #458FF6;
 }
 
+/* FOOTER */
+
+.footer {
+    max-width: 1600px;
+    max-height: 432px;
+    background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+    margin-top: 202px;
+    position: relative;
+}
+
+.footer-block {
+    display: flex;
+    padding: 109px 170px 111px 110px;
+}
+
+.footer-block-text {
+    color: #FFFFFF;
+    margin: 0 71.5px;
+    width: 123px;
+}
+
+.footer-block1 {
+    width: 398px;
+}
+
+.footer-block4 {
+    width: 138px;
+}
+
+.footer-block1 h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 22px;
+}
+
+.footer-block1 h3::before{
+    content: 'T';
+    font-size: 26px;
+    line-height: 32px;
+    margin-right: 12px;
+    color: #5B9BF3;
+    background-color: #ff0000;
+    width: 41px;
+    height: 41px;
+    border-radius: 50%;
+    display: inline-flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-block-text h4 {
+    font-size: 20px;   
+    line-height: 60px;
+    font-weight: 700;     
+}
+
+.footer-block h6 {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 28px;
+}
+
+.footer-block-text p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 38px;
+}
+
+.footer-block1 p {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 28px;
+    margin-bottom: 31px;
+}
+
+.footer-img1 {
+    position: absolute;
+    right: 91px;
+    bottom: 389px;
+    z-index: -1;
+}
+
+.footer-img2 {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
